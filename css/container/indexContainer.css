@@ -90,7 +90,6 @@
 
 .container .inner-container .index .sections .section.sec2 .sec-con .img-con>ul {
     width: 100%;
-    position: absolute;
     height: inherit;
 }
 
@@ -255,7 +254,6 @@
 .container .inner-container .index .sections .section.sec4 .sec-con .img-con>ul {
     width: 100%;
     height: inherit;
-    position: absolute;
 }
 
 .container .inner-container .index .sections .section.sec4 .sec-con .img-con>ul>li {
