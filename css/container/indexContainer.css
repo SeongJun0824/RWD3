@@ -83,18 +83,32 @@
 .container .inner-container .index .sections .section.sec2 .sec-con .img-con {
     width: 100%;
     position: relative;
-    height: 550px;
+    /* height: 550px; */
+    height: 29vw;
+    transition: all 0.5s;
+}
+
+.container .inner-container .index .sections .section.sec2 .sec-con .img-con>ul {
+    width: 100%;
+    height: inherit;
 }
 
 .container .inner-container .index .sections .section.sec2 .sec-con .img-con>ul>li {
     position: absolute;
+    width: 100%;
+    height: inherit;
+    left: 0;
+    top: 0;
 }
 
 .container .inner-container .index .sections .section.sec2 .sec-con .img-con>ul>li img {
     width: 100%;
     height: auto;
     display: block;
+    height: inherit;
+    object-fit: cover;
 }
+
 
 .container .inner-container .index .sections .section.sec2 .sec-con .img-con>ul>li:nth-child(1) {
     z-index: 1;
@@ -232,17 +246,34 @@
 .container .inner-container .index .sections .section.sec4 .sec-con .img-con {
     width: 100%;
     position: relative;
-    height: 550px;
+    /* height: 550px; */
+    height: 29vw;
+    transition: all 0.5s;
+}
+
+.container .inner-container .index .sections .section.sec4 .sec-con .img-con>ul {
+    width: 100%;
+    height: inherit;
 }
 
 .container .inner-container .index .sections .section.sec4 .sec-con .img-con>ul>li {
+    width: 100%;
     position: absolute;
+    height: inherit;
+    left: 0;
+    top: 0;
+}
+
+.container .inner-container .index .sections .section.sec4 .sec-con .img-con>ul>li:nth-child(1) {
+    z-index: 1;
 }
 
 .container .inner-container .index .sections .section.sec4 .sec-con .img-con>ul>li img {
     width: 100%;
     height: auto;
     display: block;
+    height: inherit;
+    object-fit: cover;
 }
 
 .container .inner-container .index .sections .section.sec4 .sec-con .img-con .center-btn {
@@ -259,6 +290,7 @@
     justify-content: space-between;
     padding: 0 30px;
     box-sizing: border-box;
+    z-index: 10;
 }
 
 .container .inner-container .index .sections .section.sec4 .sec-con .img-con .center-btn span.arrow {
@@ -322,21 +354,25 @@
     box-sizing: border-box;
     letter-spacing: 3px;
 }
-.container .inner-container .index .sections .section.sec5 .sec-con .sec5-con{
+
+.container .inner-container .index .sections .section.sec5 .sec-con .sec5-con {
     flex: 0 1 520px;
     /* border: 1px solid; */
     text-align: center;
 }
-.container .inner-container .index .sections .section.sec5 .sec-con .sec5-con h1.title{
+
+.container .inner-container .index .sections .section.sec5 .sec-con .sec5-con h1.title {
     line-height: 20px;
     padding: 15px 0;
 }
-.container .inner-container .index .sections .section.sec5 .sec-con .sec5-con p{
+
+.container .inner-container .index .sections .section.sec5 .sec-con .sec5-con p {
     line-height: 20px;
     font-size: 14px;
     padding: 20px 0;
 }
-.container .inner-container .index .sections .section.sec5 .sec-con .sec5-con span.pouBtn{
+
+.container .inner-container .index .sections .section.sec5 .sec-con .sec5-con span.pouBtn {
     width: 100px;
     display: block;
     background-color: #000;
@@ -345,15 +381,21 @@
     padding: 10px 15px;
     cursor: pointer;
 }
-.container .inner-container .index .sections .section.sec5 .sec-con .sec5-con span.pouBtn:hover{
+
+.container .inner-container .index .sections .section.sec5 .sec-con .sec5-con span.pouBtn:hover {
     background-color: #444;
 }
 
-@media only screen and (max-width:640px){
+@media only screen and (max-width:640px) {
     .container .inner-container .index .sections .section.sec4 .sec-con .bottom-con>ul {
-        display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
-        text-align: center;
+    }
+
+    .container .inner-container .index .sections .section.sec2 .sec-con .img-con {
+        height: calc(100vw - 72px);
+    }
+
+    .container .inner-container .index .sections .section.sec4 .sec-con .img-con {
+        height: calc(100vw - 72px);
     }
 }
