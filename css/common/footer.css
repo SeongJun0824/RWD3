@@ -1,3 +1,24 @@
 /*footer*/
-.footer {}
-
+.footer {
+    background-color: #000;
+}
+.footer .inner-footer{
+    display: flex;
+    justify-content: center;
+}
+.footer .inner-footer .fcon{
+    flex: 0 1 980px;
+    height: 200px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .inner-footer .fcon a{
+    color: #fff;
+    text-decoration: underline;
+    padding: 0 5px;
+}
+.footer .inner-footer .fcon a:hover{
+    color: #f00;
+}
